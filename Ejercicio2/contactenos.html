@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="header fixed-top">
+    <div class="d-flex justify-content-center bg-dark  text-white">
+      <h2 class="display-4">Darꓘ</h2>
+    </div>
+    <div class="d-flex justify-content-center border-top border-bottom">
+      <a class="navbar-brand" href="#">
+      <img class="rounded-circle" src="./imagenes/svg.jpg" width="30" height="30" alt="" loading="lazy">
+    </a>
+      <a class="p-2 bd-highlight text-secondary" href="index.html">Home</a>
+      <a class="p-2 bd-highlight text-secondary" href="galeria.html">Galeria</a>
+      <a class="p-2 bd-highlight text-info" href="contactenos.html">Contacto</a>
+              <a class="p-2 bd-highlight text-secondary" href="../Ejercicio1/index.html">Ejercicio 1</a>
+              <div class="d-flex">
+                <div class="mr-auto p-2 text-secondary"> <a type="button"   data-toggle="modal" data-target="#exampleModal">Iniciar sesion </a></div>
+              </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Iniciar sesion</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <form id="login">
+           <div class="input-group mb-3">
+             <div class="input-group-prepend">
+               <span class="input-group-text" id="basic-addon1">@</span>
+             </div>
+             <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
+           </div>
+           <div class="input-group mb-3">
+             <div class="input-group-prepend">
+               <span class="input-group-text" id="basic-addon1">@</span>
+             </div>
+             <input type="password" class="form-control" placeholder="Contrasenia" aria-label="Username" aria-describedby="basic-addon1" required>
+           </div>
+
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+         <button type="submit" class="btn btn-primary">Enviar</button>
+       </div>
+     </form>
+     </div>
+   </div>
+ </div>
+
+  <div class="container"  style="margin-top:155px">
+    <div class="row">
+      <div class="col-12 col-md-10 offset-1">
+        <h3>Contactenos</h3>
+        <div class="card" style="border:2px">
+          <form id="form-registro">
+            <div class="row">
+              <div class="col-12 col-md-6">
+              <div class="form-group">
+                  <label for="nombres">Nombre:</label>
+                  <input type="text" class="form-control" id="nombres" placeholder="Nombre" required>
+              </div>
+              </div>
+              <div class="col-12 col-md-6">
+              <div class="form-group">
+                  <label for="apellidos">Apellidos:</label>
+                  <input type="text" class="form-control" id="apellidos"  placeholder="Apellidos" required>
+              </div>
+              </div>
+              <div class="col-12 col-md-6">
+              <div class="form-group">
+                <label for="correo">Correo Electronico</label>
+                <input type="email" class="form-control" id="correo"  placeholder="Correo Electronico " required>
+              </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="">Genero:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="M" required>
+                  <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="F" required>
+                  <label class="form-check-label" for="inlineRadio2">Femenino</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                   <label for="exampleFormControlSelect1">Nivel Escolaridad</label >
+                   <select class="form-control" id="exampleFormControlSelect1" required>
+                     <option>hasta noveno</option>
+                     <option>Bachiller</option>
+                     <option>Universitario</option>
+                     <option>Universitario + Maestria</option>
+                     <option>Tecnico</option>
+                   </select>
+                 </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="">Intereses</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Leer">
+                  <label class="form-check-label" for="inlineCheckbox1">Leer</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="TV">
+                  <label class="form-check-label" for="inlineCheckbox2">TV</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="P">
+                  <label class="form-check-label" for="inlineCheckbox2">Programar</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="VJ">
+                  <label class="form-check-label" for="inlineCheckbox2">Video Juegos</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-12">
+                <label for="">Comentarios</label>
+                <div class="md-form">
+                  <textarea id="form7" class="md-textarea form-control" rows="3" required></textarea>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 my-4">
+                <button  type="submit" id="btn-enviar"  class="btn btn-primary">Registrarme</button>
+                <button type="reset" class="btn btn-danger">Cancelar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="d-flex justify-content-between text-secondary border-top">
+    <div class="p-2 bd-highlight">
+      <ul>
+        <li>Oscar Alfredo Caceres Hernandez 033616</li>
+        <li>Douglas Alberto Menjivar Quiterio 352616</li>
+        <li>DS29</li>
+      </ul>
+    </div>
+     <div class="p-2 bd-highlight my-3">
+
+        <a href="https://www.facebook.com/">         <img class="rounded-circle mx-1" src="./imagenes/facebook.svg" width="30" height="30" alt="" loading="lazy">
+      </a>
+        <a href="https://www.google.com/">         <img class="rounded-circle mx-1" src="./imagenes/google.svg" width="30" height="30" alt="" loading="lazy">
+      </a>
+        <a href="https://www.twitter.com/">         <img class="rounded-circle mx-1" src="./imagenes/twitter.svg" width="30" height="30" alt="" loading="lazy">
+      </a>
+     </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/apps.js"></script>
+</body>
+</html>

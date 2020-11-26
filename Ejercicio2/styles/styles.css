@@ -1,0 +1,27 @@
+.banner{
+  height:400px;
+}
+
+.card{
+  border: none;
+}
+.header{
+  background-color: white;
+}
+
+#carouselExampleIndicators{
+  margin-top: 100px !important;
+}
+
+.menu{
+  margin-top: 100px;
+  background-color: white;
+}
+
+.separador{
+  height: 50px;
+}
+
+.testimonios{
+  width: 500px !important;
+}
