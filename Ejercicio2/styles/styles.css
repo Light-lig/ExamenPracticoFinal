@@ -1,7 +1,6 @@
 .banner{
   height:400px;
 }
-
 .card{
   border: none;
 }
@@ -27,11 +26,12 @@
 }
 
 #animacion{
-  height: 400px;
+  height: 370px;
   width: 100%;
   background-color: #003087;
   color: white;
     text-align: center;
+        margin-left: 0px !important;
 }
 
 #play{
@@ -54,5 +54,9 @@
   #contenedorPublicidad{
     position: absolute;
     float: left;
+    right:18;
+  }
+  #animacion{
+    margin-left: 0px !important;
   }
 }
