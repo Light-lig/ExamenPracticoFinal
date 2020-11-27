@@ -47,14 +47,20 @@
   }
   #titulo{
     font-size: 40px;
+    position: absolute;
+    margin-left: -145px !important;
   }
   #precio{
     font-size: 40px;
+    margin-left: -145px;
+    position: absolute;
+    margin-top: 50px;
   }
   #contenedorPublicidad{
     position: absolute;
     float: left;
     right:18;
+    width: auto;
   }
   #animacion{
     margin-left: 0px !important;
