@@ -17,11 +17,13 @@ $(document).ready(function() {
           k++
       });
     }
+    $('#animacion').waypoint(function() {
+      gsap.fromTo("#play",{autoAlpha: 0}, {autoAlpha: 1, duration: 4});
+      gsap.fromTo("#titulo",{ y: 0,x:0},{x:100,y:0,duration: 2});
+      gsap.fromTo("#precio",{duration: 1, y: 100,x:100, opacity: 0}, {duration: 3, y: 0, opacity: 1, x:100, scale: 1, ease: "bounce"});
+}, {
+    offset: '100%'
+});
 
-
-
-  gsap.from("#play", {duration: 1, y: 300, x:300, x:300, y:300, opacity: 0, scale: 0.5});
-  gsap.from("#titulo", {duration: 1, y: -300, opacity: 0, scale: 0.5});
-  gsap.from("#precio", {duration: 3, y: 300, x:-300, opacity: 0, scale: 0.5, ease: "bounce"});
 
 });
